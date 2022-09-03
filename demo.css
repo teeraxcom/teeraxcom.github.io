@@ -1,0 +1,329 @@
+/* Common Styles */
+body {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #fff;
+}
+
+.nav-topbar{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	background: #eee;
+	width: 100%;
+	height: 50px;
+	padding: 0 45px;
+	z-index: 1000;
+}
+
+/* Dropdowns */
+.size-classes{
+	display: flex;
+}
+
+.size-classes .label{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	margin-right: 15px;
+}
+
+.dropdown-trigger-for-btn{
+	cursor: pointer;
+	width: 100px;
+	height: 34px;
+	font-size: 1.1rem;
+	border: 1px solid var(--color-1);
+	border-radius: 15rem;
+}
+.dropdown-trigger-for-btn:hover,
+.dropdown-trigger-for-btn.active{
+	background: var(--color-1);
+	color: #fff;
+}
+.dropdown-for-btn{
+	position: absolute;
+	width: 85%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	opacity: 0;
+	right: 0;
+	background: #eee;
+	margin-top: 55px;
+	margin-right: 45px;
+	padding: 15px;
+	text-align: center;
+	top: -1000px;
+	transition: .2s ease-in-out;
+	z-index: 989;
+}
+
+.dropdown-for-btn p {
+	font-size: 1rem;
+	color: var(--color-1);
+	margin-bottom: 10px;
+}
+
+.dropdown-for-btn span{
+	padding: 15px 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.2rem;
+	border-radius: 15rem;
+	margin-bottom: 5px;
+	transition: .3s ease-in-out;
+}
+.dropdown-for-btn span:hover,
+.dropdown-for-btn span.active{
+	background: var(--color-1);
+	color: #fff;
+}
+
+.dropdown-for-btn.active{
+	opacity: 1;
+	top: 0;
+}
+
+/* Color Palate */
+.color-palate{
+	display: flex;
+}
+.color{
+	margin-left: 10px;
+}
+
+#blue{
+	background: var(--color-1);
+}
+#orange{
+	background: var(--color-2);
+}
+#green{
+	background: var(--color-3);
+}
+#pink{
+	background: var(--color-4);
+}
+#black{
+	background: var(--color-black);
+}
+
+.theme-switch{
+	background: transparent;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 50px;
+	font-size: .8rem;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+.theme-switch:hover,
+.theme-switch.active{
+	background: black;
+	color: #eee;
+}
+
+.color{
+	padding: 15px;
+	background: rebeccapurple;
+	border-radius: 15rem;
+}
+
+.nav-sidebar{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: left;
+	top: 0;
+	left:0;
+	margin-top: 100px;
+	width: 9%;
+	height: 70vh;
+	font-size: 1.2rem;
+	z-index: 9999;
+	background: #fff;
+}
+
+.nav-sidebar button{
+	width: 100%;
+	padding: 15px 30px;
+	padding-left: 0;
+	color: black;
+	background: none;
+	text-decoration: none;
+	border-radius: 0px 50px 50px 0px;
+	border-left: 10px solid transparent ;
+	transition: .3s ease-in-out;
+}
+.nav-sidebar button:hover,
+.nav-sidebar button.active{
+	color: var(--color-1);
+	border-left: 10px solid var(--color-1) ;
+}
+
+.container{
+	width: 80%;
+	margin-left: 6%;
+	display: flex;
+	flex-direction: column;
+}
+section{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.col-full{
+	display: flex;
+	padding: 0 15px;
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+	color: #777777;
+	font-size: 1.1rem;
+}
+
+.title span{
+	font-weight: bolder;
+	font-size: 1.3rem;
+}
+
+.title p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	color: #777777;
+	font-size: 1.1rem;
+}
+
+/* Button and Card */
+h3 {
+	margin-bottom: 15px;
+	font-size: 1.4rem;
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+.alt-card, .alt-btn {
+	margin-bottom: 40px;
+}
+
+.alt-card {
+	width: 100%;
+	height: 30vh;
+	padding: 50px;
+	margin: 0 auto;
+	font-size: 1.2rem;
+}
+
+/* custom size for buttons */
+.alt-btn {
+	padding: 40px 80px;
+	text-transform: lowercase;
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+}
+
+/* Code */
+.code-container{
+	position: relative;
+	width: 100%;
+	min-height: 250px;
+	height: 30vh;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	z-index: 500;
+	font-size: 1.3rem;
+	margin-top: -80px;
+}
+.code-container .code{
+	border-radius: 10px;
+}
+
+/* Code Tool Tip */
+
+.tooltip{
+	position: absolute;
+	display: flex;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.tooltip button{
+	border: none;
+	padding: 7px 15px;
+	border-radius: 150px;
+	font-size: 1rem;
+	text-transform: none;
+	background: #282c34;
+	color: white;
+	border: 3px solid white;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #282c34;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+	text-transform: none;
+  z-index: 1;
+  top: -100%;
+  left: 50%;
+	transform: translateX(-50%);
+	font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+	z-index: 2000;
+}
+
+
+@media (min-width: 1921px) {
+	body{
+		font-size: 32px;
+	}
+}

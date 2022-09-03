@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS Library file -->
+  <link rel="stylesheet" href="bg.alt.min.css" />
+  <!-- Optional Javascript -->
+  <script src="demo-bg.alt.min.js" defer></script>
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="demo.css" />
+
+  <!-- Highlight Style -->
+  <!-- <link rel="stylesheet" href="a11y-dark.min.css" /> -->
+  <link rel="stylesheet" href="atom-one-dark-reasonable.min.css" />
+  
+  <!-- Custom Javascript -->
+  <script src="highlight.min.js" defer></script>
+  <script src="demo.js" defer></script>
+
+  <title>
+    Create CSS Library of 100+ Background Hover Effects for Buttons & Cards
+    - Altarmiz.com
+  </title>
+</head>
+<body>
+  <div class="nav-topbar">
+    <div class="logo">
+      <h1>Altarmiz | Teerax</h1>
+    </div>
+
+    
+    <div class="title">Background Hover Effect <span>0</span></div>
+    <div class="color-palate">
+      <button id="dark-theme" class="theme-switch">Dark</button>
+      <button id="blue" class="color"></button>
+      <button id="orange" class="color"></button>
+      <button id="green" class="color"></button>
+      <button id="pink" class="color"></button>
+      <button id="black" class="color"></button>
+    </div>
+
+    <div class="size-classes">
+      <p class="label">Span Amount & Size: </p>
+      <button class="dropdown-trigger-for-btn">Select</button>
+      <div class="dropdown-for-btn">
+        <div>
+          <p>1 span</p>
+          <span id="a1-s1">.a1-s1</span>
+        </div>
+        <div>
+          <p>2 span</p>
+          <span id="a2-s1">.a2-s1</span>
+          <span id="a2-s1-o">.a2-s1-o</span>
+        </div>
+        <div>
+          <p>4 span</p>
+          <span id="a4-s1">.a4-s1</span>
+          <span id="a4-s2">.a4-s2</span>
+          <span id="a4-s2-o">.a4-s2-o</span>
+        </div>
+        <div>
+          <p>5 span</p>
+          <span id="a5-s1">.a5-s1</span>
+          <span id="a5-s1-o">.a5-s1-o</span>
+        </div>
+        <div>
+          <p>8 span</p>
+          <span id="a8-s1">.a8-s1</span>
+          <span id="a8-s1-o">.a8-s1-o</span>
+        </div>
+        <div>
+          <p>10 span</p>
+          <span id="a10-s1">.a10-s1</span>
+          <span id="a10-s1-o">.a10-s1-o</span>
+          <span id="a10-s2">.a10-s2</span>
+          <span id="a10-s2-o">.a10-s2-o</span>
+        </div>
+        <div>
+          <p>16 span</p>
+          <span id="a16-s1">.a16-s1</span>
+        </div>
+        <div>
+          <p>20 span</p>
+          <span id="a20-s1">.a20-s1</span>
+          <span id="a20-s1-o">.a20-s1-o</span>
+          <span id="a20-s2">.a20-s2</span>
+          <span id="a20-s2-o">.a20-s2-o</span>
+        </div>
+        <div>
+          <p>25 span</p>
+          <span id="a25-s1">.a25-s1</span>
+        </div>
+        <div>
+          <p>40 span</p>
+          <span id="a40-s1">.a40-s1</span>
+          <span id="a40-s1-o">.a40-s1-o</span>
+          <span id="a40-s2">.a40-s2</span>
+          <span id="a40-s2-o">.a40-s2-o</span>
+        </div>
+        <div>
+          <p>50 span</p>
+          <span id="a50-s1">.a50-s1</span>
+          <span id="a50-s1-o">.a50-s1-o</span>
+        </div>
+        <div>
+          <p>100 span</p>
+          <span id="a100-s1">.a100-s1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <nav class="nav-sidebar">
+    <button id="effect-0" class="nav-btn">Effect 0</a>
+    <button id="effect-1" class="nav-btn">Effect 1</a>
+    <button id="effect-2" class="nav-btn">Effect 2</a>
+    <button id="effect-3" class="nav-btn">Effect 3</a>
+    <button id="effect-4" class="nav-btn">Effect 4</a>
+    <button id="effect-5" class="nav-btn">Effect 5</a>
+    <button id="effect-6" class="nav-btn">Effect 6</a>
+    <button id="effect-7" class="nav-btn">Effect 7</a>
+    <button id="effect-8" class="nav-btn">Effect 8</a>
+    <button id="effect-9" class="nav-btn">Effect 9</a>
+    <button id="effect-10" class="nav-btn">Effect 10</a>
+  </nav>
+
+  <div class="container">
+    <section id="effects">
+      <div class="col">
+        <div class="title">
+          <p>	Only CSS Effects</p>
+        </div>
+      
+        <!-- button using <button> element -->
+        <button class="alt alt-btn effect-1 a5-s1">
+          <div class="alt-item">.<span>a5-s1</span></div>
+          <div class="alt-bg"></div>
+        </button>
+      
+        <!-- Card -->
+        <div class="alt alt-card effect-1 a20-s1">
+          <div class="alt-item">
+            <h3>Card Title ( <span>.a20-s1</span> )</h3>
+            <p>We can put different elements inside this <br> 'alt-item' div.</p>
+          </div>
+          <div class="alt-bg"></div>
+        </div>
+      </div>
+    
+      <div class="col">
+        <div class="title">
+          <p>	Using JS ( .delay class )</p>
+        </div>
+      
+        <!-- button using <button> element -->
+        <button class="alt alt-btn effect-1 a5-s1 delay">
+          <div class="alt-item">.<span>a5-s1</span></div>
+          <div class="alt-bg"></div>
+        </button>
+      
+        <!-- Card -->
+        <div class="alt alt-card effect-1 a20-s1 delay">
+          <div class="alt-item">
+            <h3>Card Title ( <span>.a20-s1</span> )</h3>
+            <p>We can put different elements inside this <br> 'alt-item' div.</p>
+          </div>
+          <div class="alt-bg"></div>
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="title">
+          <p>	Using JS ( .delay-random class )</p>
+        </div>
+      
+        <!-- button using <button> element -->
+        <button class="alt alt-btn effect-1 a5-s1 delay-random">
+          <div class="alt-item">.<span>a5-s1</span></div>
+          <div class="alt-bg"></div>
+        </button>
+      
+        <!-- Card -->
+        <div class="alt alt-card effect-1 a20-s1 delay-random">
+          <div class="alt-item">
+            <h3>Card Title ( .<span>a20-s1</span> )</h3>
+            <p>We can put different elements inside this <br> 'alt-item' div.</p>
+          </div>
+          <div class="alt-bg"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="col-full">
+        <!-- <textarea class="code codeHighlight" name="" id="" spellcheck="false"></textarea> -->
+        <pre class="code-container">
+          <div class="tooltip">
+            <button id="copy"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Copy</button>
+          </div>
+          <code class="code language-html"></code>
+        </pre>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
