@@ -1,0 +1,365 @@
+/* ================== INDEX ==================
+:: 1.0 WebFonts
+:: 2.0 Css Variables
+:: 3.0 Common Css
+:: 4.0 Custom Css Classes
+============================================*/
+
+/* =================================
+:: 1.0 Web Fonts
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* =================================
+:: 2.0 Css Variables
+================================= */
+:root {
+  /* colors */
+  --light-mint: #55efc4;
+  --mint: #00b894;
+  --light-paste: #81ecec;
+  --paste: #00cec9;
+  --light-blue: #74b9ff;
+  --blue: #0984e3;
+  --light-purple: #a29bfe;
+  --purple: #6c5ce7;
+  --light-yellow: #ffeaa7;
+  --yelloe: #fdcb6e;
+  --light-orange: #fab1a0;
+  --orange: #e17055;
+  --light-red: #ff7675;
+  --red: #d63031;
+  --light-pink: #fd79a8;
+  --pink: #e84393;
+  --light-ash: #dfe6e9;
+  --ash: #b2bec3;
+  --gray: #636e72;
+  --dark: #2d3436;
+  --light: #eeeeee;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Background Color */
+  --bg-white: rgb(255, 255, 255);
+  --bg-black: rgb(32, 32, 32);
+
+  /* Text */
+  --primary-font: 'Poppins', sans-serif;
+}
+
+/* =================================
+:: 3.0 Common Css
+================================= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+}
+a,
+a:hover,
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+
+.btn,
+.btn:active,
+.btn::before,
+.btn::after {
+}
+.btn:hover {
+}
+/* remove input x */
+input[type='text']::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type='text']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* =================================
+:: 4.0 Custom Utility 
+================================= */
+.ptb-100 {
+  padding: 100px 0;
+}
+
+/* =================================
+:: 5.0 Error Section-1 Css 
+================================= */
+
+.section-error-1 {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.error-text {
+  width: 60%;
+  font-family: var(--primary-font);
+}
+.error-text h1 {
+  font-size: 10em;
+  color: var(--ash);
+}
+
+.error-text h2 {
+  font-size: 2.5em;
+  margin-top: 10px;
+  color: var(--gray);
+}
+
+.error-text h4 {
+  font-size: 1.3em;
+  margin-top: 10px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.error-text .links {
+  margin-top: 25px;
+}
+
+.error-text a {
+  margin-right: 10px;
+  padding: 7px 25px;
+  color: var(--ash);
+  border-radius: 50px;
+  border: 1px solid var(--ash);
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.error-text a:hover {
+  background: linear-gradient(45deg, var(--light-purple), var(--purple));
+  color: var(--white);
+  border: 1px solid var(--light-purple);
+}
+
+.error-text .search-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 1px solid var(--ash);
+  border-radius: 50px;
+  width: 70%;
+}
+
+.error-text .search-box a {
+  background: var(--white);
+  border: var(--light-purple) 1px solid;
+  color: var(--ash);
+  border-radius: 50px 0 0 50px;
+  border-right: none;
+  border: none;
+  padding: 11px 25px;
+  transition: transform 0.2s linear;
+}
+.error-text .search-box a:hover {
+  background: linear-gradient(45deg, var(--light-purple), var(--purple));
+  color: var(--white);
+}
+
+.error-text .search-box:focus-within,
+.error-text .search-box:hover {
+  border: 1px solid var(--light-purple);
+}
+
+.search-box input:focus + .search-box input .search-box a {
+  color: red !important;
+}
+
+.error-text .search-box input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 50px;
+  border: none;
+  color: var(--gray);
+  font-size: 1.2em;
+  outline: none;
+}
+
+.feature-graphics {
+  width: 40%;
+  top: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.feature-graphics img {
+  position: absolute;
+}
+
+.feature-graphics .img-bg {
+  width: 100%;
+}
+
+.feature-graphics .img-submarine {
+  left: -8%;
+  top: 25%;
+  width: 100%;
+}
+.feature-graphics .img-fish-blue-red {
+  left: 88%;
+  top: 60%;
+  width: 23%;
+}
+.feature-graphics .img-fish-blue {
+  left: -15%;
+  top: 50%;
+  width: 15%;
+}
+.feature-graphics .img-fish-red {
+  left: 30%;
+  top: 80%;
+  width: 13%;
+}
+.feature-graphics .img-coral {
+  left: -5%;
+  top: 70%;
+  width: 28%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section-error-1 {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .error-text {
+    width: 100%;
+    order: 2;
+    text-align: center;
+    margin-top: -50px;
+    z-index: 1;
+  }
+  .error-text h1 {
+    font-size: 7rem;
+  }
+
+  .error-text h2 {
+    font-size: 2rem;
+  }
+  .error-text h4 {
+    font-size: 1.15rem;
+    color: var(--gray);
+    opacity: 0.7;
+  }
+
+  .feature-graphics {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -160px;
+    height: 500px;
+    order: 1;
+    z-index: 5;
+  }
+
+  .search-box {
+    margin: 0 auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .feature-graphics .img-submarine {
+    left: -8%;
+    top: 15%;
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section-error-1 {
+    flex-direction: row;
+  }
+  .error-text {
+    order: 1;
+    width: 60%;
+    text-align: left;
+    margin-top: 0px;
+  }
+  .feature-graphics {
+    order: 2;
+    width: 40%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
